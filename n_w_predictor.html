@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='n_w_predictor.css') }}">
+</head>
+<body>
+    <div class="page-box">
+        <h1>Next Word Predictor (LSTM)</h1>
+
+        <label for="seedText">Type your sentence here:</label>
+        <textarea id="seedText" rows="1" placeholder="e.g. I want a"></textarea>
+
+        <!-- Suggestions List -->
+        <div class="suggestions-section">
+            <h2>Suggestions:</h2>
+            <div id="suggestionList" class="suggestion-list">
+                <p>Start typing to get predictions</p>
+            </div>
+        </div>
+
+        <!-- Final Sentence -->
+        <div class="final-sentence-box">
+            <strong>Final Sentence:</strong>
+            <p id="fullSentence">Your sentence will appear here...</p>
+        </div>
+    </div>
+    
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
