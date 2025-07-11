@@ -68,4 +68,3 @@ This is an AI-powered web application that predicts the next most probable word 
 - NLP learning and academic demos
 
 
-> Built with ❤️ by [S.D.Chandra sekarayyan]
